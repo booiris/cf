@@ -19,6 +19,30 @@ int main()
     while (t--)
     {
         cin >> n >> m >> k;
-        
+        int key = n * m / 2 - k;
+        if (n & 1)
+        {
+            k -= m / 2;
+            if (k < 0)
+            {
+                cout << "NO\n";
+                continue;
+            }
+        }
+        else if (m & 1)
+        {
+            key -= n / 2;
+            if (key < 0)
+            {
+                cout << "NO\n";
+                continue;
+            }
+        }
+        if ((k & 1) || (key & 1))
+        {
+            cout << "NO\n";
+            continue;
+        }
+        cout << "YES\n";
     }
 }
