@@ -87,6 +87,7 @@ int main()
             continue;
         }
         cout << "YES\n";
+        // cout << k << " " << key << "\n";
         if (n & 1)
         {
             for (int i = 0; i < m; i += 2)
@@ -132,40 +133,40 @@ int main()
                 ans[i][0] = ans[i + 1][0] = color;
             }
             int nowx = 0, nowy = 1;
-            cout << k << " " << key << endl;
             for (int i = 0; i < key; i++)
             {
                 while (ans[nowx][nowy] != 0)
                 {
-                    nowx += 2;
-                    if (nowx >= n)
-                        nowx = 0, nowy++;
+                    nowy++;
+                    if (nowy >= m)
+                        nowx += 2, nowy = 1;
                 }
                 char color = get_color(nowx, nowy);
                 ans[nowx][nowy] = ans[nowx + 1][nowy] = color;
-                nowx += 2;
-                if (nowx >= n)
-                    nowx = 0, nowy++;
+                nowy++;
+                if (nowy >= m)
+                    nowx += 2, nowy = 1;
             }
             for (int i = 0; i < k; i++)
             {
-                for (int s = 0; s < n; s++)
-                {
-                    for (int j = 0; j < m; j++)
-                        cout << ans[s][j];
-                    cout << "\n";
-                }
+                // for (int s = 0; s < n; s++)
+                // {
+                //     for (int j = 0; j < m; j++)
+                //         cout << ans[s][j];
+                //     cout << "\n";
+                // }
                 while (ans[nowx][nowy] != 0)
                 {
-                    nowx++;
-                    if (nowx >= n)
-                        nowx = 0, nowy += 2;
+                    nowy += 2;
+                    if (nowy >= m)
+                        nowx++, nowy = 1;
                 }
+
                 char color = get_color(nowx, nowy);
                 ans[nowx][nowy] = ans[nowx][nowy + 1] = color;
-                nowx++;
-                if (nowx >= n)
-                    nowx = 0, nowy += 2;
+                nowy += 2;
+                if (nowy >= m)
+                    nowx++, nowy = 1;
             }
         }
         else
@@ -203,6 +204,7 @@ int main()
         }
         for (int i = 0; i < n; i++)
         {
+
             for (int j = 0; j < m; j++)
                 cout << ans[i][j];
             cout << "\n";
