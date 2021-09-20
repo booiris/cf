@@ -12,7 +12,7 @@ using namespace std;
 typedef long long ll;
 int temp()
 {
-    return 0;
+    return 1;
 }
 int aaa;
 ll dp[15][2];
