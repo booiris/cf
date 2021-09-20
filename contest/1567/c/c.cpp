@@ -10,6 +10,11 @@
 #define INF 0x3f3f3f3f
 using namespace std;
 typedef long long ll;
+int temp()
+{
+    return 0;
+}
+int aaa;
 ll dp[15][2];
 int main()
 {
