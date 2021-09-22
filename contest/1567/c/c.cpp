@@ -15,6 +15,7 @@ int temp()
     return 1;
 }
 int aaa;
+int a;
 ll dp[15][2];
 int main()
 {

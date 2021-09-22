@@ -1,6 +1,6 @@
 [code-runner]
     command = 'g++'
-    args = ['${file} -o ~/build/${fileBasenameNoExtension} && ~/build/${fileBasenameNoExtension} < ${fileDirname}in1.txt' ]
+    args = ['${file} -o ~/.build/${fileBasenameNoExtension} && ~/.build/${fileBasenameNoExtension} < ${fileDirname}in1.txt' ]
 
 [submit-code]
     command = '~/cf/cf'
