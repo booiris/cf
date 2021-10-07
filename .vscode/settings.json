@@ -1,5 +1,4 @@
 {
-    "editor.fontSize": 16,
     "diffEditor.renderIndicators": false,
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
@@ -21,10 +20,9 @@
     },
     // 在运行代码之前保存文件
     "code-runner.saveFileBeforeRun": true,
-    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontSize": 14,
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorBlinking": true,
-    "files.encoding": "gbk",
     "files.autoGuessEncoding": false,
     "code-runner.preserveFocus": false,
     "C_Cpp.intelliSenseCacheSize": 128,
@@ -112,13 +110,15 @@
         "xiosbase": "cpp"
     },
     "code-runner.ignoreSelection": true,
-    "editor.quickSuggestions": false,
-    "[cpp]": {
-        "editor.quickSuggestions": true
-    },
-    "[c]": {
-        "editor.quickSuggestions": true
-    },
-    "C_Cpp.autocomplete": "Disabled",
-    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    // "editor.quickSuggestions": false,
+    // "[cpp]": {
+    //     "editor.quickSuggestions": true
+    // },
+    // "[c]": {
+    //     "editor.quickSuggestions": true
+    // },
+    // "C_Cpp.autocomplete": "Disabled",
+    "clang.completion.enable": false,
+    "clang.completion.completeMacros": false,
+    "clang.diagnostic.delay": 1000,
 }
