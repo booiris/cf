@@ -9,8 +9,17 @@
 #define INF 0x3f3f3f3f
 using namespace std;
 typedef long long ll;
+char ini[500005];
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        cin >> ini;
+           
+
+    }
 }
