@@ -196,7 +196,7 @@
 	},
 	"expanded_folders":
 	[
-		"/home/booiris/cf"
+		"/home/booiris/cf_work"
 	],
 	"file_history":
 	[
@@ -262,7 +262,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 44.0
 	},
 	"find_in_files":
 	{
@@ -302,7 +302,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 40.0
+		"height": 44.0
 	},
 	"input":
 	{
@@ -355,7 +355,7 @@
 	"project": "cf.sublime-project",
 	"replace":
 	{
-		"height": 76.0
+		"height": 84.0
 	},
 	"save_all_on_build": true,
 	"select_file":
