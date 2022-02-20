@@ -25,7 +25,6 @@
     "code-runner.preserveFocus": false,
     "C_Cpp.intelliSenseCacheSize": 128,
     "diffEditor.ignoreTrimWhitespace": false,
-    "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
         "process_control.h": "c",
         "algorithm": "cpp",
@@ -108,14 +107,14 @@
         "xiosbase": "cpp"
     },
     "code-runner.ignoreSelection": true,
-    // "editor.quickSuggestions": false,
+    //"editor.quickSuggestions": false,
     // "[cpp]": {
     //     "editor.quickSuggestions": true
     // },
     // "[c]": {
     //     "editor.quickSuggestions": true
     // },
-    // "C_Cpp.autocomplete": "Disabled",
+    //"C_Cpp.autocomplete": "Disabled",
     "clang.completion.enable": false,
     "clang.completion.completeMacros": false,
     "clang.diagnostic.delay": 1000,
